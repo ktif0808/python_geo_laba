@@ -201,8 +201,8 @@ class DrawPlot:
             DrawPlot.buildPlot2D(plan._timeHigh, plan._arrDis, 'check time (control point)', \
                                  'distance (m)', 'The plot of dependency of distance to time', 'darkorange')
         elif dependency=="flight-path3D":
-            DrawPlot.buildPlot3D(plan._arrLong, plan._arrLat, plan._arrHight, 'Longitude (m)', \
-                                 'Latitude (m)', 'altitude (m)','The plot of 3D path of the airplane')
+            DrawPlot.buildPlot3D(plan._arrCorLat, plan._arrCorLong, plan._arrHight,  \
+                                 'Latitude', 'Longitude', 'altitude (m)','The plot of 3D path of the airplane')
         elif dependency=="floliumMap":
             DrawPlot.buildFoliumMap(plan._arrCorLat, plan._arrCorLong)
         else:
